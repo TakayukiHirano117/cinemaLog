@@ -28,4 +28,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/posts/{id}', Post\Delete\DestroyController::class)->name('posts.destroy');
 });
 
+Route::get('/components', function () {
+    return view('components');
+});
+
 require __DIR__.'/auth.php';
