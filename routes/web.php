@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComponentsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Post;
 use App\Http\Controllers\TopController;
@@ -28,8 +29,11 @@ Route::middleware('auth')->group(function () {
     Route::delete('/posts/{id}', Post\Delete\DestroyController::class)->name('posts.destroy');
 });
 
-Route::get('/components', function () {
-    return view('components');
-});
+// Route::get('/components', function () {
+//     return view('components');
+// });
+
+Route::get('/components', ComponentsController::class);
+
 
 require __DIR__.'/auth.php';

@@ -6,4 +6,6 @@
     <x-elements.input placeholder="keyword" size='small' icon="search" />
     <label for="">あらすじ</label><br>
     <x-elements.textarea placeholder="outline" class="h-[160px]"></x-elements.textarea>
+    <x-elements.select :options="$categories" type="category"></x-elements.select>
+    <x-elements.select :options="$sortItems" type="sort"></x-elements.select>
 </x-layout>

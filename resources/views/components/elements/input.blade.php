@@ -29,7 +29,7 @@
 
 <div>
     {{-- asset($iconClasses[$icon]) --}}
-    {{-- アイコンはimgタグでinput要素の上に重ねて配置d --}}
+    {{-- アイコンはimgタグでinput要素の上に重ねて配置 --}}
     <img src="{{ asset($iconClasses[$icon]) }}" alt="" class="invert-[0.69] sepia-[0.09] saturate-[5.62] hue-rotate-[191deg] brightness-[0.89] contrast-[0.88] h-3.5 w-3.5 absolute ml-4 mt-3">
     <input type="text"
         {{ $attributes->merge(['class' => 'rounded-lg bg-[#FCFCFC] h-[36px] w-[332px] text-sm font-medium pl-10' . ' ' . $sizeClasses[$size], 'placeholder' => $placeholderClasses[$placeholder]]) }} />
