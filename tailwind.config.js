@@ -13,6 +13,15 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                hiragino: [
+                    '"Hiragino Kaku Gothic Pro"',
+                    '"ヒラギノ角ゴ Pro"',
+                    '"Hiragino Sans"',
+                    'sans-serif'
+                ],
+            },
+            boxShadow: {
+                custom: '0px 2px 4px 0px rgba(0, 0, 0, 0.25)', // #00000040をrgbaに変換
             },
         },
     },

@@ -12,13 +12,15 @@ class ComponentsController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $categories = Category::all();
+        $categories = Category::all(['id', 'name'])->toArray();
+        // dd($categories);
         $sortItems = [
-            'newer' => '新しい順',
-            'older' => '古い順',
-            'better' => '評価が高い順',
-            'worse' => '評価が低い順'
+            ['id' => 1, 'name' => '新しい順'],
+            ['id' => 2, 'name' => '古い順'],
+            ['id' => 3, 'name' => '評価が高い順'],
+            ['id' => 4, 'name' => '評価が低い順'],
         ];
+        // dd($sortItems);
 
         return view('components', ['categories' => $categories, 'sortItems' => $sortItems]);
     }
