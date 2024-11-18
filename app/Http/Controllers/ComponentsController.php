@@ -21,6 +21,8 @@ class ComponentsController extends Controller
             ['id' => 4, 'name' => '評価が低い順'],
         ];
         // dd($sortItems);
+        // dd(url('/icons/check.svg'));
+        // dd(asset("/icons/check.svg"));
 
         return view('components', ['categories' => $categories, 'sortItems' => $sortItems]);
     }

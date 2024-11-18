@@ -7,6 +7,6 @@
         'id' => $id
     ]) }}>
     @foreach ($options as $option)
-        <option value="{{ $option['id'] }}" id="{{ $option['id'] }}">{{ $option['name'] }}</option>
+        <option value="{{ $option['id'] }}" id="{{ $option['id'] }}" onclick=$onclick class="bg-[url('{{ asset("/icons/check.svg") }}')] bg-[14px_14px] pl-2">{{ $option['name'] }}</option>
     @endforeach
 </select>

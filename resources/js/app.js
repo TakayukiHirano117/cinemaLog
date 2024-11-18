@@ -10,3 +10,8 @@ Alpine.start();
 // sample.addEventListener('click', (e) => {
 //     console.log(e.target.value)
 // })
+
+const category = document.getElementById('category')
+category.onclick = (e) => {
+    console.log(category.selectedIndex)
+}
