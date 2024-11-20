@@ -29,4 +29,5 @@
         <button type="submit">送信</button>
     </form> --}}
     <x-elements.datepicker ></x-elements.datepicker>
+    <x-elements.logo ></x-elements.logo>
 </x-layout>
