@@ -4,6 +4,7 @@
     $colorClasses = [
         'primary' => 'bg-[#419EB9]',
         'secondary' => 'border-white border',
+        'tertiary' => 'bg-[#C80E0E]',
     ];
     $sizeClasses = [
         'small' => 'px-4 py-2 text-sm',

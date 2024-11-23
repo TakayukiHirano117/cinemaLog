@@ -23,11 +23,16 @@
         <option value="" class="">bye</option>
     </select>
 
-    {{-- <form action="{{ route('form_select') }}" method="POST">
-        @csrf
-        <x-elements.select :options="$sortItems" name="sort" onclick="" id="sort"></x-elements.select>
-        <button type="submit">送信</button>
-    </form> --}}
     <x-elements.datepicker ></x-elements.datepicker>
-    <x-elements.logo ></x-elements.logo>
+    <x-elements.logo bgColor="secondary"></x-elements.logo>
+    <x-elements.header></x-elements.header>
+    <x-elements.dialog title="編集取り消し確認" message="edit" >
+        <x-elements.button color="secondary" size="small">キャンセル</x-elements.button>
+        <x-elements.button color="primary" size="small">編集</x-elements.button>
+    </x-elements.dialog>
+    <x-elements.dialog title="削除確認" message="delete" >
+        <x-elements.button color="secondary" size="small">キャンセル</x-elements.button>
+        <x-elements.button color="tertiary" size="small">削除</x-elements.button>
+    </x-elements.dialog>
+    <x-elements.slider></x-elements.slider>
 </x-layout>

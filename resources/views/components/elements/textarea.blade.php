@@ -11,4 +11,4 @@
     {{ $attributes->merge([
         'class' => 'rounded-lg p-4 w-[580px] resize-none bg-[#FCFCFC] font-medium  ',
         'placeholder' => $placeholderClasses[$placeholder],
-    ]) }}>{{ $slot }}</textarea>
+    ]) }}></textarea>
